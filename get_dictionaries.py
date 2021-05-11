@@ -278,7 +278,8 @@ def get_sheet2_classes(version = '1.0'):
                     'Others':[45,46]
                     },
     'MANAGED CONVENTIONAL': {'Irrigated crops':[52,53,54,55,56,57,58,59,60,61,62],
-                            'Managed water bodies':[63,65,74],
+                            'Managed water bodies':[63,74],
+                            'Aquaculture' :[65],
                             'Residential':[68,69,71,72],
                             'Industry':[67,70,76],
                             'Others':[75,78]
