@@ -35,7 +35,7 @@
      id="namedview3338"
      showgrid="false"
      inkscape:zoom="0.59524245"
-     inkscape:cx="855.49575"
+     inkscape:cx="560.65791"
      inkscape:cy="532.72028"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
@@ -46,7 +46,7 @@
        id="grid4945" /></sodipodi:namedview><metadata
      id="metadata3342"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs3340"><linearGradient
        id="linearGradient4864"
        osb:paint="solid"><stop
@@ -97,6 +97,7 @@
      id="tspan1103-4"
      x="167.96558"
      y="801.28552">Orchards</tspan></text>
+
 <text
    id="text3496-5-7-6-8-9-9"
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.20000076px;line-height:0%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#2b2b2a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -108,6 +109,7 @@
      id="tspan1422-0"
      x="167.39371"
      y="849.36304">Banana</tspan></text>
+
 <text
    y="-303.32449"
    x="795.48792"
@@ -119,6 +121,7 @@
      id="tspan1416-0"
      x="795.48792"
      y="-303.32449">Fruits</tspan></text>
+
 <path
    inkscape:connector-curvature="0"
    id="path3372-2-8"
@@ -136,6 +139,7 @@
      x="167.44058"
      sodipodi:role="line"
      id="tspan1097-3">Maize</tspan></text>
+
 <g
    transform="matrix(1,0,0,0.71857759,820.4399,290.41566)"
    id="g3400-3-5-2"><path
@@ -153,6 +157,7 @@
      x="167.39371"
      sodipodi:role="line"
      id="tspan1099-2">Rice</tspan></text>
+
 <g
    transform="matrix(1,0,0,0.71857759,493.23749,289.78511)"
    id="g3400-8-2-7"><path
@@ -170,6 +175,7 @@
      id="tspan4901-5-0-8"
      x="168.80933"
      y="568.56036">Vegetables</tspan></text>
+
 <g
    transform="matrix(1,0,0,0.71857759,541.23749,290.43944)"
    id="g3400-3-8"><path
@@ -187,6 +193,7 @@
      id="tspan1286-4"
      x="167.89058"
      y="621.69794">Cotton</tspan></text>
+
 <g
    transform="matrix(0.99964024,0,0,0.71973203,642.08785,289.41551)"
    id="g3408-4-4"><path
@@ -206,6 +213,7 @@
      x="167.96558"
      sodipodi:role="line"
      id="tspan1101-8">Other Crops</tspan></text>
+
 <text
    y="-302.39786"
    x="505.65057"
@@ -222,6 +230,7 @@
      id="tspan1190-3-5"
      x="505.65057"
      y="-302.39786" /></text>
+
 <g
    transform="matrix(0.99964024,0,0,0.71327637,590.90801,288.97868)"
    id="g3400-8-6-5-5"><path
@@ -245,6 +254,7 @@
      id="tspan4895-1"
      x="168.73433"
      y="213.27242">Wheat</tspan></text>
+
 <g
    transform="matrix(1,0,0,0.71857759,227.80375,290.36712)"
    id="g3400-8-6"><path
@@ -262,6 +272,7 @@
      id="tspan1053-0"
      x="168.80933"
      y="256.65024">Vegetables</tspan></text>
+
 <g
    transform="matrix(1,0,0,0.71857759,275.80375,291.02146)"
    id="g3400-4"><path
@@ -281,6 +292,7 @@
      id="tspan1051-4"
      x="167.89058"
      y="301.63464">Clover</tspan></text>
+
 <g
    transform="matrix(0.99964024,0,0,0.71973203,322.2032,288.91231)"
    id="g3408-3-6"><path
@@ -298,6 +310,7 @@
      id="tspan4967-4-0"
      x="167.96558"
      y="352.12701">Other Crops</tspan></text>
+
 <text
    y="-302.97989"
    x="222.6169"
@@ -314,6 +327,7 @@
      id="tspan1292-9"
      x="222.6169"
      y="-302.97989" /></text>
+
 
 
 
@@ -401,6 +415,7 @@
 
 
 
+
 <text
    id="text3496-5-7-6-8-9"
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.20000076px;line-height:0%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#2b2b2a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -414,6 +429,7 @@
 
 
 
+
 <text
    y="-617.18463"
    x="795.48773"
@@ -424,6 +440,7 @@
      id="tspan1416"
      x="795.48773"
      y="-617.18463">Fruits</tspan></text>
+
 
 
 
@@ -470,6 +487,7 @@
 
 
 
+
 <text
    id="text3496-5-7-4-6-8-3"
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.20000076px;line-height:0%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#2b2b2a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -480,6 +498,7 @@
      id="tspan1099"
      x="482.59369"
      y="522.0835">Rice</tspan></text>
+
 
 
 
@@ -497,6 +516,7 @@
 
 
 
+
 <text
    id="text3496-5-7-4-6-8-11-5"
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.20000076px;line-height:0%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#2b2b2a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -507,6 +527,7 @@
      id="tspan1286"
      x="483.09058"
      y="621.69781">Cotton</tspan></text>
+
 
 
 
@@ -522,6 +543,7 @@
      id="tspan1101"
      x="483.16559"
      y="674.26746">Other Crops</tspan></text>
+
 
 
 
@@ -544,6 +566,7 @@
      id="tspan1190-3"
      x="505.65039"
      y="-616.258" /></text>
+
 
 
 
@@ -655,6 +678,7 @@
 
 
 
+
 <text
    y="-717.16589 -717.16589 -717.16589 -717.16589 -717.16589 -717.16589"
    x="71.666939 83.838943 93.188942 102.53894 107.16294 117.44794"
@@ -673,6 +697,7 @@
 
 
 
+
 <text
    y="-692.51813"
    x="72.721771"
@@ -683,6 +708,7 @@
      id="tspan2424"
      x="72.721771"
      y="-692.51813">Period: NaN</tspan></text>
+
 
 
 
@@ -718,6 +744,7 @@
 
 
 
+
 <text
    y="-446.86472"
    x="950.36603"
@@ -729,6 +756,7 @@
      y="-446.86472"
      x="950.36603"
      style="font-size:14px;line-height:1.25">NaN</tspan></text>
+
 
 
 
@@ -802,6 +830,7 @@
 
 
 
+
 <text
    id="crop_r01c06"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -813,6 +842,7 @@
      y="-444.96399"
      x="505.69861"
      style="font-size:14px;line-height:1.25">NaN</tspan></text>
+
 
 
 
@@ -840,6 +870,7 @@
 
 
 
+
 <text
    id="crop_r01c10"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -858,6 +889,7 @@
 
 
 
+
 <text
    id="crop_r01c02"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -869,6 +901,7 @@
      y="-444.96399"
      x="237.19919"
      style="font-size:14px;line-height:1.25">NaN</tspan></text>
+
 
 
 
@@ -911,6 +944,7 @@
 
 
 
+
 <text
    y="-747.02167"
    x="72.045609"
@@ -922,6 +956,7 @@
      x="72.045609"
      y="-747.02167"
      style="font-size:18px;line-height:1.25">Sheet 3: Agricultural services</tspan></text>
+
 
 
 
@@ -958,6 +993,7 @@
 
 
 
+
 <text
    id="text3496-5-7-4-6-8"
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.20000076px;line-height:0%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#2b2b2a;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -968,6 +1004,7 @@
      id="tspan1053"
      x="484.00934"
      y="256.65009">Vegetables</tspan></text>
+
 
 
 
@@ -1145,6 +1182,7 @@
 
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.80000019px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.80000001"
@@ -1162,6 +1200,7 @@
      y="-12.004004"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.80000019px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.80000001"
      id="tspan6306">Please refer to the cropping season diagram for further information.</tspan></text>
+
 
 
 
@@ -1257,6 +1296,7 @@
 
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.9333334px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.80000001"
@@ -1276,6 +1316,7 @@
 
 
 
+
 <text
    y="-127.9898"
    x="950.77173"
@@ -1287,6 +1328,7 @@
      y="-127.9898"
      x="950.77173"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.06666756px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:-0.34400001px;writing-mode:lr-tb;text-anchor:start;stroke-width:1">Yield</tspan></text>
+
 
 
 
@@ -1313,6 +1355,7 @@
 
 
 
+
 <text
    id="text3496-5-2-5-6-9"
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.20000076px;line-height:0%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#2b2b2a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1328,6 +1371,7 @@
 
 
 
+
 <text
    id="text3496-5-7-4-6-8-1-7"
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.20000076px;line-height:0%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#2b2b2a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1339,6 +1383,7 @@
      id="tspan4967-4"
      x="483.16559"
      y="352.12686">Other Crops</tspan></text>
+
 
 
 
@@ -1359,6 +1404,7 @@
 
 
 
+
 <text
    id="ag_water_cons-7"
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.20000076px;line-height:0%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1372,6 +1418,7 @@
 
 
 
+
 <g
    transform="matrix(0.94047243,0,0,1.1722508,51.517099,424.42782)"
    id="g3450-6"
@@ -1382,19 +1429,16 @@
      d="m 0,0 h 911.585 c 0,-34.014 0,0 0,-34.014 L 0,-34.012 Z"
      sodipodi:nodetypes="ccccc" /></g><text
    xml:space="preserve"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.9333334px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.80000001"
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.93333334px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.80000001;"
    x="61.057854"
    y="-410.05768"
    id="text2348-1-6"
    transform="scale(1,-1)"><tspan
      sodipodi:role="line"
-     id="tspan1684"
-     x="61.057854"
-     y="-410.05768">Cropped</tspan><tspan
+     id="tspan1066">Cropped</tspan><tspan
      sodipodi:role="line"
-     id="tspan1686"
-     x="61.057854"
-     y="-391.39102">Area</tspan></text>
+     id="tspan1068">Area 1000 fed.</tspan></text>
+
 
 
 
@@ -1418,6 +1462,7 @@
 
 
 
+
 <text
    id="crop_r01c03"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1429,6 +1474,7 @@
      y="-444.96399"
      x="283.47781"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="crop_r01c04"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1440,6 +1486,7 @@
      y="-444.96399"
      x="331.01666"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="crop_r01c08"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1451,6 +1498,7 @@
      y="-444.96399"
      x="601.21265"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="crop_r01c09"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1462,6 +1510,7 @@
      y="-444.96399"
      x="654.30762"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="crop_r02c01"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1474,6 +1523,7 @@
      y="-398.01733"
      x="191.26013"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="crop_r02c06"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1486,6 +1536,7 @@
      y="-398.01733"
      x="505.69843"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="crop_r02c11"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1498,6 +1549,7 @@
      y="-398.01724"
      x="831.43567"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="crop_r02c10"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1510,6 +1562,7 @@
      y="-398.01724"
      x="783.04004"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="crop_r02c02"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1522,6 +1575,7 @@
      y="-398.01733"
      x="237.19897"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="crop_r02c07"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1534,6 +1588,7 @@
      y="-398.01733"
      x="550.7934"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="crop_r02c05"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1546,6 +1601,7 @@
      y="-398.01733"
      x="459.1543"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="crop_r02c03"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1558,6 +1614,7 @@
      y="-398.01733"
      x="283.4776"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="crop_r02c04"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1570,6 +1627,7 @@
      y="-398.01733"
      x="331.01648"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="crop_r02c08"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1582,6 +1640,7 @@
      y="-398.01733"
      x="601.2124"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="crop_r02c09"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1594,6 +1653,7 @@
      y="-398.01733"
      x="654.30737"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="lp_r01c01"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1605,6 +1665,7 @@
      y="-127.90388"
      x="191.26048"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="lp_r01c06"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1616,6 +1677,7 @@
      y="-127.90388"
      x="505.69879"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="lp_r01c11"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1627,6 +1689,7 @@
      y="-127.90379"
      x="831.43604"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="lp_r01c10"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1638,6 +1701,7 @@
      y="-127.90379"
      x="783.04041"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="lp_r01c02"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1649,6 +1713,7 @@
      y="-127.90388"
      x="237.19931"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="lp_r01c07"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1660,6 +1725,7 @@
      y="-127.90388"
      x="550.79376"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="lp_r01c05"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1671,6 +1737,7 @@
      y="-127.90388"
      x="459.1546"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="lp_r01c03"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1682,6 +1749,7 @@
      y="-127.90388"
      x="283.47797"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="lp_r01c04"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1693,6 +1761,7 @@
      y="-127.90388"
      x="331.01685"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="lp_r01c08"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1704,6 +1773,7 @@
      y="-127.90388"
      x="601.21283"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="lp_r01c09"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1715,6 +1785,7 @@
      y="-127.90388"
      x="654.3078"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="wp_r01c01"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1726,6 +1797,7 @@
      y="-75.850555"
      x="191.26013"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="wp_r01c06"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1737,6 +1809,7 @@
      y="-75.850555"
      x="505.69843"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="wp_r01c11"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1748,6 +1821,7 @@
      y="-75.850418"
      x="831.43561"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="wp_r01c10"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1759,6 +1833,7 @@
      y="-75.850418"
      x="783.03998"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="wp_r01c02"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1770,6 +1845,7 @@
      y="-75.850555"
      x="237.19891"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="wp_r01c07"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1781,6 +1857,7 @@
      y="-75.850555"
      x="550.7934"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="wp_r01c05"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1792,6 +1869,7 @@
      y="-75.850555"
      x="459.15424"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="wp_r01c03"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1803,6 +1881,7 @@
      y="-75.850555"
      x="283.4776"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="wp_r01c04"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1814,6 +1893,7 @@
      y="-75.850555"
      x="331.01648"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="wp_r01c08"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1825,6 +1905,7 @@
      y="-75.850555"
      x="601.21246"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    id="wp_r01c09"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
@@ -1836,6 +1917,7 @@
      y="-75.850555"
      x="654.30743"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.9333334px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.80000001"
@@ -1851,4 +1933,5 @@
      id="tspan1558"
      x="59.097492"
      y="-436.68356">Consumption</tspan></text>
+
 </g></svg>
