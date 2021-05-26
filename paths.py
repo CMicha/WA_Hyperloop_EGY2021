@@ -12,14 +12,13 @@ def get_path(name):
     paths = {
              'sheet1_svg':  os.path.join(install_path, "svg\sheet_1.svg"),
              'sheet2_svg':  os.path.join(install_path, "svg\sheet_2.svg"),
-             'sheet3_1_svg': os.path.join(install_path, "svg\sheet_3_part1.svg"),
-             'sheet3_2_svg':  os.path.join(install_path, "svg\sheet_3_part2.svg"),
+             'sheet3_svg': os.path.join(install_path, "svg\sheet_3_national.svg"),
              'sheet4_1_svg':  os.path.join(install_path, "svg\sheet_4_part1.svg"),
              'sheet4_2_svg':  os.path.join(install_path, "svg\sheet_4_part2.svg"),
              'sheet6_svg':    os.path.join(install_path, "svg\sheet_6.svg"),
              'sheet5_svg':    os.path.join(install_path, "svg\sheet_5.svg"),
              'sheet7m_svg':  os.path.join(install_path, "svg\sheet7_month.svg"),
-             'sheet7y_svg':  os.path.join(install_path, "svg\sheet7_yearly.svg")
+             'sheet7y_svg':  os.path.join(install_path, "svg\sheet7_yearly.svg"),
              }
     
     return paths[name]
