@@ -11,11 +11,11 @@ import os
 def find_possible_dates(str_):
     """
     Finds index of possible year and month in a string if the date is of format 
-    yyyymm or yyyy{char}mm for years between 1900 and 2020
+    yyyymm or yyyy{char}mm for years between 1900 and 2050
     """
     basename = os.path.basename(str_)
     months =['{0:02d}'.format(i) for i in range(1,12)]
-    years = ['{0}'.format(i) for i in range(1900, 2020)]
+    years = ['{0}'.format(i) for i in range(1900, 2050)]
     options = {}
     i = 0
     for y in years:
@@ -39,11 +39,11 @@ def find_possible_dates(str_):
 def find_possible_dates_negative(str_):
     """
     Finds index of possible year and month in a string if the date is of format 
-    yyyymm or yyyy{char}mm for years between 1900 and 2020
+    yyyymm or yyyy{char}mm for years between 1900 and 2050
     """
     basename = os.path.basename(str_)
     months =['{0:02d}'.format(i) for i in range(1,12)]
-    years = ['{0}'.format(i) for i in range(1900, 2020)]
+    years = ['{0}'.format(i) for i in range(1900, 2050)]
     options = {}
     i = 0
     for y in years:
