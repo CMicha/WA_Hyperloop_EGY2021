@@ -354,8 +354,9 @@ def create_sheet3_png(basin, period, units, data, output, template=False):
     
     # Conversion to get Water consumption in MCM
     unitpow = 3
-    df1['WATER_CONSUMPTION'] *= 10**unitpow
-    df1['LAND_PRODUCTIVITY'] *= 10**-3
+    df1['WATER_CONSUMPTION'] *= 10**unitpow #conversion to MCM
+    df1['LAND_PRODUCTIVITY'] *= 10**-3 #conversion to t/ha
+    df1['AREA'] /= 4.2 #conversion to feddan 
     # Data frames
     crop_WC = dict()
     crop_LP = dict()
