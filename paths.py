@@ -10,7 +10,7 @@ import os
 def get_path(name):
     install_path = os.path.dirname(WA_Hyperloop.__file__)
     paths = {
-             'sheet1_svg':  os.path.join(install_path, "svg\sheet_1.svg"),
+             'sheet1_svg':  os.path.join(install_path, "svg\sheet_1_v2.svg"),
              'sheet2_svg':  os.path.join(install_path, "svg\sheet_2.svg"),
              'sheet3_svg': os.path.join(install_path, "svg\sheet_3_national.svg"),
              'sheet4_1_svg':  os.path.join(install_path, "svg\sheet_4_part1.svg"),
