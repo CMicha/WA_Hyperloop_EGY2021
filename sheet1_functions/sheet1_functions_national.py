@@ -946,6 +946,8 @@ def sum_ts(flow_csvs):
         if unit == 'm3/s':
             monthrange_s = np.array([calendar.monthrange(date.year, date.month)[1]*60*60*24 for date in flow_dates])
             flow_values = flow_values * monthrange_s / 1000**3
+        if unit == 'MCM':
+            flow_values = flow_values / 1000
         flows.append(flow_values)
         dates.append(flow_dates)
        
