@@ -64,7 +64,7 @@ def create_sheet3(complete_data, metadata, output_dir):
                 else:
                     hydro_years.extend([hy])
                 
-            result_seasonly = calc_Y_WP_seasons(start_dates, end_dates, hydro_years, crop_map, crop_code, crop_name, complete_data['etg'][0], complete_data['etg'][1], complete_data['etb'][0], complete_data['etb'][1], complete_data['ndm'][0], complete_data['ndm'][1], os.path.join(output_dir, 'WP_Y_Seasonly_csvs'), harvest_index, moisture_content, aot, c3c4)            
+            result_seasonly = calc_Y_WP_seasons(start_dates, end_dates, hydro_years, crop_map, crop_code, crop_name, complete_data['et'][0], complete_data['et'][1], complete_data['ndm'][0], complete_data['ndm'][1], os.path.join(output_dir, 'WP_Y_Seasonly_csvs'), harvest_index, moisture_content, aot, c3c4)            
             wp_dictionary[crop_name] = result_seasonly
             
         else:
@@ -173,7 +173,7 @@ def import_growing_seasons(csv_fh):
     return start_dates, end_dates
 
     
-def calc_Y_WP_seasons(start_dates, end_dates, hydro_years, lu_fh, lu_class, croptype, etgreen_fhs, etgreen_dates, etblue_fhs, etblue_dates, ndm_fhs, ndm_dates, output_dir, harvest_index, moisture_content, aot, c3c4):
+def calc_Y_WP_seasons(start_dates, end_dates, hydro_years, lu_fh, lu_class, croptype, et_fhs, et_dates, ndm_fhs, ndm_dates, output_dir, harvest_index, moisture_content, aot, c3c4):
     """
     Calculate Yields and WPs per season and save results in a csv-file.
     
@@ -218,17 +218,17 @@ def calc_Y_WP_seasons(start_dates, end_dates, hydro_years, lu_fh, lu_class, crop
     csv_file = open(csv_filename, 'w')
     writer = csv.writer(csv_file, delimiter=';', lineterminator = '\n' )
     
-    writer.writerow(['HydroYear', "Startdate", "Enddate", "Yield [kg/ha]", "WP [kg/m3]", "WC [km3]", "WC_blue [km3]", "WC_green [km3]", "Area [km2]"])
+    writer.writerow(['HydroYear', "Startdate", "Enddate", "Yield [kg/ha]", "WP [kg/m3]", "WC [km3]", "Area [km2]"])
     for hydroyear, startdate, enddate in zip(hydro_years, start_dates, end_dates):
-        Yield, Wp, Wc, Wc_blue, Wc_green, crop_area = calc_Y_WP_season(startdate, enddate, lu_fh, lu_class, croptype, etgreen_fhs, etgreen_dates, etblue_fhs, etblue_dates, ndm_fhs, ndm_dates,  harvest_index, moisture_content, aot, c3c4, output_dir = output_dir)
+        Yield, Wp, Wc, crop_area = calc_Y_WP_season(startdate, enddate, lu_fh, lu_class, croptype, et_fhs, et_dates, ndm_fhs, ndm_dates,  harvest_index, moisture_content, aot, c3c4, output_dir = output_dir)
         
-        writer.writerow([hydroyear, startdate, enddate, Yield, '{:.6f}'.format(Wp), '{:.6f}'.format(Wc), '{:.6f}'.format(Wc_blue), '{:.6f}'.format(Wc_green), '{:.6f}'.format(crop_area)])
+        writer.writerow([hydroyear, startdate, enddate, Yield, '{:.6f}'.format(Wp), '{:.6f}'.format(Wc), '{:.6f}'.format(crop_area)])
     
     csv_file.close()
     return csv_filename
 
     
-def calc_Y_WP_season(startdate, enddate, lu_fh, lu_class, croptype, etgreen_fhs, etgreen_dates, etblue_fhs, etblue_dates, ndm_fhs, ndm_dates, harvest_index, moisture_content, aot, c3c4, output_dir = None):
+def calc_Y_WP_season(startdate, enddate, lu_fh, lu_class, croptype, et_fhs, et_dates, ndm_fhs, ndm_dates, harvest_index, moisture_content, aot, c3c4, output_dir = None):
     """
     Calculate Yields and WPs for one season.
     
@@ -278,7 +278,7 @@ def calc_Y_WP_season(startdate, enddate, lu_fh, lu_class, croptype, etgreen_fhs,
     Wc_green : float
         The green water consumption for the croptype.
     """
-    common_dates = becgis.common_dates([etblue_dates, etgreen_dates, ndm_dates])
+    common_dates = becgis.common_dates([et_dates, ndm_dates])
     
 
     
@@ -310,40 +310,33 @@ def calc_Y_WP_season(startdate, enddate, lu_fh, lu_class, croptype, etgreen_fhs,
         NDM = np.nansum(NDMs, axis=2)
         del NDMs
         
-        ETGREENs = np.stack([becgis.open_as_array(etgreen_fhs[etgreen_dates == date][0], nan_values = True) * fraction for date, fraction in zip(req_dates, fractions)], axis=2)
-        ETGREEN = np.nansum(ETGREENs, axis=2)
-        del ETGREENs
-        
-        ETBLUEs = np.stack([becgis.open_as_array(etblue_fhs[etblue_dates == date][0], nan_values = True) * fraction for date, fraction in zip(req_dates, fractions)], axis=2)
-        ETBLUE = np.nansum(ETBLUEs, axis=2)
-        del ETBLUEs
+        ETs = np.stack([becgis.open_as_array(et_fhs[et_dates == date][0], nan_values = True) * fraction for date, fraction in zip(req_dates, fractions)], axis=2)
+        ET = np.nansum(ETs, axis=2)
+        del ETs
         
         LULC = becgis.open_as_array(lu_fh)
         
         NDM[NDM == 0] = np.nan
-        NDM[LULC != lu_class] = ETBLUE[LULC != lu_class] = ETGREEN[LULC != lu_class] =  np.nan
+        NDM[LULC != lu_class] = ET[LULC != lu_class] =  np.nan
         
         Y = aot * harvest_index * NDM * 22.222 / (1 - moisture_content) * c3c4
 
         Yield = np.nanmean(Y)
         
-        Et_blue = np.nanmean(ETBLUE)
-        Et_green = np.nanmean(ETGREEN)
+        Et = np.nanmean(ET)
         
         areas = becgis.map_pixel_area_km(lu_fh)
-        Wc_blue = np.nansum(ETBLUE / 1000**2 * areas)
-        Wc_green = np.nansum(ETGREEN / 1000**2 * areas)
-        Wc = Wc_blue + Wc_green
+        Wc = np.nansum(ET / 1000**2 * areas)
         
         areas[LULC != lu_class] = np.nan
         crop_area = np.nansum(areas)
         print('{0}: {1} km2'.format(croptype, crop_area))
         
-        Wp = Yield / ((Et_blue + Et_green) * 10) 
+        Wp = Yield / ((Et) * 10) 
     else:       
-        Yield = Wp = Wc = Wc_blue = Wc_green = crop_area = np.nan
+        Yield = Wp = Wc = crop_area = np.nan
         
-    return Yield, Wp, Wc, Wc_blue, Wc_green, crop_area
+    return Yield, Wp, Wc, crop_area
 
 
 
