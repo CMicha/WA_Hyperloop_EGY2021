@@ -609,6 +609,7 @@ def open_as_array(fih, bandnumber=1, nan_values=True):
     array : ndarray
         array with the pixel values.
     """
+    
     dataset = gdal.Open(fih, gdal.GA_ReadOnly)
     tpe = dataset.GetDriver().ShortName
     if tpe == 'HDF4':
@@ -618,12 +619,14 @@ def open_as_array(fih, bandnumber=1, nan_values=True):
     else:
         subdataset = dataset.GetRasterBand(bandnumber)
         ndv = subdataset.GetNoDataValue()
-        ndv = float(subdataset.GetNoDataValue())
+ #       ndv = float(subdataset.GetNoDataValue())
     array = subdataset.ReadAsArray()
     if nan_values:
         if len(array[array == ndv]) >0:
-            #array[array == ndv] = np.nan
-            array[array == ndv] = np.nan_to_num(ndv)
+            ndv = float(subdataset.GetNoDataValue())
+            array = array.astype('float')
+            array[array == ndv] = np.nan
+           # array[array == ndv] = np.nan_to_num(ndv)
     return array
 
 

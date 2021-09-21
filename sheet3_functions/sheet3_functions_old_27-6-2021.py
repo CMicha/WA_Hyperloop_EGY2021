@@ -31,14 +31,15 @@ def create_sheet3(complete_data, metadata, output_dir):
     HIWC_dict = gd.get_hi_and_ec()
     wp_dictionary = dict()
     years = dict()
+
+    LULC = becgis.open_as_array(metadata['lu'], nan_values = True)
     
     for crop in metadata['crops']:
         crop_code = crop[3]
-        crop_map  = crop[2]
-        LULC = becgis.open_as_array(crop_map, nan_values = False)
         if crop_code in LULC:
             crop_name = crop[0]
             season_txt = crop[1]
+            crop_map = crop[2]
             if crop[4]==None:
                 harvest_index = HIWC_dict[crop_name][0]  
                 moisture_content = HIWC_dict[crop_name][1]
@@ -63,7 +64,7 @@ def create_sheet3(complete_data, metadata, output_dir):
                 else:
                     hydro_years.extend([hy])
                 
-            result_seasonly = calc_Y_WP_seasons(start_dates, end_dates, hydro_years, crop_map, crop_code, crop_name, complete_data['et'][0], complete_data['et'][1], complete_data['ndm'][0], complete_data['ndm'][1], os.path.join(output_dir, 'WP_Y_Seasonly_csvs'), harvest_index, moisture_content, aot, c3c4)            
+            result_seasonly = calc_Y_WP_seasons(start_dates, end_dates, hydro_years, crop_map, crop_code, crop_name, complete_data['etg'][0], complete_data['etg'][1], complete_data['etb'][0], complete_data['etb'][1], complete_data['ndm'][0], complete_data['ndm'][1], os.path.join(output_dir, 'WP_Y_Seasonly_csvs'), harvest_index, moisture_content, aot, c3c4)            
             wp_dictionary[crop_name] = result_seasonly
             
         else:
@@ -172,7 +173,7 @@ def import_growing_seasons(csv_fh):
     return start_dates, end_dates
 
     
-def calc_Y_WP_seasons(start_dates, end_dates, hydro_years, lu_fh, lu_class, croptype, et_fhs, et_dates, ndm_fhs, ndm_dates, output_dir, harvest_index, moisture_content, aot, c3c4):
+def calc_Y_WP_seasons(start_dates, end_dates, hydro_years, lu_fh, lu_class, croptype, etgreen_fhs, etgreen_dates, etblue_fhs, etblue_dates, ndm_fhs, ndm_dates, output_dir, harvest_index, moisture_content, aot, c3c4):
     """
     Calculate Yields and WPs per season and save results in a csv-file.
     
@@ -217,17 +218,17 @@ def calc_Y_WP_seasons(start_dates, end_dates, hydro_years, lu_fh, lu_class, crop
     csv_file = open(csv_filename, 'w')
     writer = csv.writer(csv_file, delimiter=';', lineterminator = '\n' )
     
-    writer.writerow(['HydroYear', "Startdate", "Enddate", "Yield [kg/ha]", "WP [kg/m3]", "WC [km3]", "Area [km2]"])
+    writer.writerow(['HydroYear', "Startdate", "Enddate", "Yield [kg/ha]", "WP [kg/m3]", "WC [km3]", "WC_blue [km3]", "WC_green [km3]", "Area [km2]"])
     for hydroyear, startdate, enddate in zip(hydro_years, start_dates, end_dates):
-        Yield, Wp, Wc, crop_area = calc_Y_WP_season(startdate, enddate, lu_fh, lu_class, croptype, et_fhs, et_dates, ndm_fhs, ndm_dates,  harvest_index, moisture_content, aot, c3c4, output_dir = output_dir)
+        Yield, Wp, Wc, Wc_blue, Wc_green, crop_area = calc_Y_WP_season(startdate, enddate, lu_fh, lu_class, croptype, etgreen_fhs, etgreen_dates, etblue_fhs, etblue_dates, ndm_fhs, ndm_dates,  harvest_index, moisture_content, aot, c3c4, output_dir = output_dir)
         
-        writer.writerow([hydroyear, startdate, enddate, Yield, '{:.6f}'.format(Wp), '{:.6f}'.format(Wc), '{:.6f}'.format(crop_area)])
+        writer.writerow([hydroyear, startdate, enddate, Yield, '{:.6f}'.format(Wp), '{:.6f}'.format(Wc), '{:.6f}'.format(Wc_blue), '{:.6f}'.format(Wc_green), '{:.6f}'.format(crop_area)])
     
     csv_file.close()
     return csv_filename
 
     
-def calc_Y_WP_season(startdate, enddate, lu_fh, lu_class, croptype, et_fhs, et_dates, ndm_fhs, ndm_dates, harvest_index, moisture_content, aot, c3c4, output_dir = None):
+def calc_Y_WP_season(startdate, enddate, lu_fh, lu_class, croptype, etgreen_fhs, etgreen_dates, etblue_fhs, etblue_dates, ndm_fhs, ndm_dates, harvest_index, moisture_content, aot, c3c4, output_dir = None):
     """
     Calculate Yields and WPs for one season.
     
@@ -277,7 +278,7 @@ def calc_Y_WP_season(startdate, enddate, lu_fh, lu_class, croptype, et_fhs, et_d
     Wc_green : float
         The green water consumption for the croptype.
     """
-    common_dates = becgis.common_dates([et_dates, ndm_dates])
+    common_dates = becgis.common_dates([etblue_dates, etgreen_dates, ndm_dates])
     
 
     
@@ -309,33 +310,40 @@ def calc_Y_WP_season(startdate, enddate, lu_fh, lu_class, croptype, et_fhs, et_d
         NDM = np.nansum(NDMs, axis=2)
         del NDMs
         
-        ETs = np.stack([becgis.open_as_array(et_fhs[et_dates == date][0], nan_values = True) * fraction for date, fraction in zip(req_dates, fractions)], axis=2)
-        ET = np.nansum(ETs, axis=2)
-        del ETs
+        ETGREENs = np.stack([becgis.open_as_array(etgreen_fhs[etgreen_dates == date][0], nan_values = True) * fraction for date, fraction in zip(req_dates, fractions)], axis=2)
+        ETGREEN = np.nansum(ETGREENs, axis=2)
+        del ETGREENs
         
-        LULC = becgis.open_as_array(lu_fh, nan_values=False)
+        ETBLUEs = np.stack([becgis.open_as_array(etblue_fhs[etblue_dates == date][0], nan_values = True) * fraction for date, fraction in zip(req_dates, fractions)], axis=2)
+        ETBLUE = np.nansum(ETBLUEs, axis=2)
+        del ETBLUEs
+        
+        LULC = becgis.open_as_array(lu_fh)
         
         NDM[NDM == 0] = np.nan
-        NDM[LULC != lu_class] = ET[LULC != lu_class] =  np.nan
+        NDM[LULC != lu_class] = ETBLUE[LULC != lu_class] = ETGREEN[LULC != lu_class] =  np.nan
         
         Y = aot * harvest_index * NDM * 22.222 / (1 - moisture_content) * c3c4
 
         Yield = np.nanmean(Y)
         
-        Et = np.nanmean(ET)
+        Et_blue = np.nanmean(ETBLUE)
+        Et_green = np.nanmean(ETGREEN)
         
         areas = becgis.map_pixel_area_km(lu_fh)
-        Wc = np.nansum(ET / 1000**2 * areas)
+        Wc_blue = np.nansum(ETBLUE / 1000**2 * areas)
+        Wc_green = np.nansum(ETGREEN / 1000**2 * areas)
+        Wc = Wc_blue + Wc_green
         
         areas[LULC != lu_class] = np.nan
         crop_area = np.nansum(areas)
         print('{0}: {1} km2'.format(croptype, crop_area))
         
-        Wp = Yield / ((Et) * 10) 
+        Wp = Yield / ((Et_blue + Et_green) * 10) 
     else:       
-        Yield = Wp = Wc = crop_area = np.nan
+        Yield = Wp = Wc = Wc_blue = Wc_green = crop_area = np.nan
         
-    return Yield, Wp, Wc, crop_area
+    return Yield, Wp, Wc, Wc_blue, Wc_green, crop_area
 
 
 
@@ -389,7 +397,7 @@ def create_sheet3_png(basin, period, units, data, output, template=False):
         'crop_r01c05' : crop_WC['Maize'],
         'crop_r01c06' : crop_WC['Rice'],
         'crop_r01c07' : crop_WC['Summer Vegetables'],
-        'crop_r01c08' : crop_WC['Cotton'],
+        'crop_r01c08' : crop_WC['Oranges'],
         'crop_r01c09' : crop_WC['Summer Other'],
         'crop_r01c10' : crop_WC['Orchards'],
         'crop_r01c11' : crop_WC['Banana'],
@@ -401,7 +409,7 @@ def create_sheet3_png(basin, period, units, data, output, template=False):
         'crop_r02c05' : crop_Area['Maize'],
         'crop_r02c06' : crop_Area['Rice'],
         'crop_r02c07' : crop_Area['Summer Vegetables'],
-        'crop_r02c08' : crop_Area['Cotton'],
+        'crop_r02c08' : crop_Area['Oranges'],
         'crop_r02c09' : crop_Area['Summer Other'],
         'crop_r02c10' : crop_Area['Orchards'],
         'crop_r02c11' : crop_Area['Banana'],
@@ -425,7 +433,7 @@ def create_sheet3_png(basin, period, units, data, output, template=False):
         'lp_r01c05' : crop_LP['Maize'],
         'lp_r01c06' : crop_LP['Rice'],
         'lp_r01c07' : crop_LP['Summer Vegetables'],
-        'lp_r01c08' : crop_LP['Cotton'],
+        'lp_r01c08' : crop_LP['Oranges'],
         'lp_r01c09' : crop_LP['Summer Other'],
         'lp_r01c10' : crop_LP['Orchards'],
         'lp_r01c11' : crop_LP['Banana'],
@@ -447,7 +455,7 @@ def create_sheet3_png(basin, period, units, data, output, template=False):
         'wp_r01c05' : crop_WP['Maize'],
         'wp_r01c06' : crop_WP['Rice'],
         'wp_r01c07' : crop_WP['Summer Vegetables'],
-        'wp_r01c08' : crop_WP['Cotton'],
+        'wp_r01c08' : crop_WP['Oranges'],
         'wp_r01c09' : crop_WP['Summer Other'],
         'wp_r01c10' : crop_WP['Orchards'],
         'wp_r01c11' : crop_WP['Banana'],
