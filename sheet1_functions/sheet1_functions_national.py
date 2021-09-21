@@ -945,9 +945,9 @@ def sum_ts(flow_csvs):
         flow_dates = becgis.convert_datetime_date(flow_dates)
         if unit == 'm3/s':
             monthrange_s = np.array([calendar.monthrange(date.year, date.month)[1]*60*60*24 for date in flow_dates])
-            flow_values = flow_values * monthrange_s / 1000**3
+            flow_values = np.array(flow_values) * monthrange_s / 1000**3
         if unit == 'MCM':
-            flow_values = flow_values / 1000
+            flow_values = np.array(flow_values) / 1000
         flows.append(flow_values)
         dates.append(flow_dates)
        

@@ -171,7 +171,9 @@ def create_sheet2_csv(lulc_dict, classes_dict, lu_fh, start_month, et_fhs, et_da
         T = becgis.open_as_array(t_fhs[t_dates == date][0], nan_values = True)
         ET = becgis.open_as_array(et_fhs[et_dates == date][0], nan_values = True)
         I = becgis.open_as_array(i_fhs[i_dates == date][0], nan_values = True)
-                
+        ET[np.isnan(LULC)] = np.nan
+        T[np.isnan(LULC)] = np.nan
+        I[np.isnan(LULC)] = np.nan        
         # Convert units from [mm/month] to [km3/month].
         I = I * MapArea / 1000000
         T = T * MapArea / 1000000
@@ -620,7 +622,8 @@ def create_sheet2_png(basin, period, units, data, output, template=False,
     p1['c1r3_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Residential"].TRANSPIRATION)
     p1['c1r4_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Industry"].TRANSPIRATION)
     p1['c1r5_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Others"].TRANSPIRATION)
-    p1['c1_t4_total'] = p1['c1r1_t4'] + p1['c1r2_t4'] + p1['c1r3_t4'] + p1['c1r4_t4'] + p1['c1r5_t4']
+    p1['c1r6_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Aquaculture"].TRANSPIRATION)
+    p1['c1_t4_total'] = p1['c1r1_t4'] + p1['c1r2_t4'] + p1['c1r3_t4'] + p1['c1r4_t4'] + p1['c1r5_t4']+ p1['c1r6_t4']
 
     p1['c1r1_t5'] = float(df_Mn.loc[df_Mn.CLASS == "Indoor domestic"].TRANSPIRATION)
     p1['c1r2_t5'] = float(df_Mn.loc[df_Mn.CLASS == "Indoor industry"].TRANSPIRATION)
@@ -661,7 +664,8 @@ def create_sheet2_png(basin, period, units, data, output, template=False,
     p1['c2r3_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Residential"].WATER)
     p1['c2r4_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Industry"].WATER)
     p1['c2r5_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Others"].WATER)
-    p1['c2_t4_total'] = p1['c2r1_t4'] + p1['c2r2_t4'] + p1['c2r3_t4'] + p1['c2r4_t4'] + p1['c2r5_t4']
+    p1['c2r6_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Aquaculture"].WATER)
+    p1['c2_t4_total'] = p1['c2r1_t4'] + p1['c2r2_t4'] + p1['c2r3_t4'] + p1['c2r4_t4'] + p1['c2r5_t4']+ p1['c2r6_t4']
 
     p1['c2r1_t5'] = float(df_Mn.loc[df_Mn.CLASS == "Indoor domestic"].WATER)
     p1['c2r2_t5'] = float(df_Mn.loc[df_Mn.CLASS == "Indoor industry"].WATER)
@@ -702,7 +706,8 @@ def create_sheet2_png(basin, period, units, data, output, template=False,
     p1['c3r3_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Residential"].SOIL)
     p1['c3r4_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Industry"].SOIL)
     p1['c3r5_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Others"].SOIL)
-    p1['c3_t4_total'] = p1['c3r1_t4'] + p1['c3r2_t4'] + p1['c3r3_t4'] + p1['c3r4_t4'] + p1['c3r5_t4']
+    p1['c3r6_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Aquaculture"].SOIL)
+    p1['c3_t4_total'] = p1['c3r1_t4'] + p1['c3r2_t4'] + p1['c3r3_t4'] + p1['c3r4_t4'] + p1['c3r5_t4']+ p1['c3r6_t4']
 
     p1['c3r1_t5'] = float(df_Mn.loc[df_Mn.CLASS == "Indoor domestic"].SOIL)
     p1['c3r2_t5'] = float(df_Mn.loc[df_Mn.CLASS == "Indoor industry"].SOIL)
@@ -743,7 +748,8 @@ def create_sheet2_png(basin, period, units, data, output, template=False,
     p1['c4r3_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Residential"].INTERCEPTION)
     p1['c4r4_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Industry"].INTERCEPTION)
     p1['c4r5_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Others"].INTERCEPTION)
-    p1['c4_t4_total'] = p1['c4r1_t4'] + p1['c4r2_t4'] + p1['c4r3_t4'] + p1['c4r4_t4'] + p1['c4r5_t4']
+    p1['c4r6_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Aquaculture"].INTERCEPTION)
+    p1['c4_t4_total'] = p1['c4r1_t4'] + p1['c4r2_t4'] + p1['c4r3_t4'] + p1['c4r4_t4'] + p1['c4r5_t4']+ p1['c4r6_t4']
 
     p1['c4r1_t5'] = float(df_Mn.loc[df_Mn.CLASS == "Indoor domestic"].INTERCEPTION)
     p1['c4r2_t5'] = float(df_Mn.loc[df_Mn.CLASS == "Indoor industry"].INTERCEPTION)
@@ -784,7 +790,8 @@ def create_sheet2_png(basin, period, units, data, output, template=False,
     p1['c6r3_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Residential"].AGRICULTURE)
     p1['c6r4_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Industry"].AGRICULTURE)
     p1['c6r5_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Others"].AGRICULTURE)
-    p1['c6_t4_total'] = p1['c6r1_t4'] + p1['c6r2_t4'] + p1['c6r3_t4'] + p1['c6r4_t4'] + p1['c6r5_t4']
+    p1['c6r6_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Aquaculture"].AGRICULTURE)
+    p1['c6_t4_total'] = p1['c6r1_t4'] + p1['c6r2_t4'] + p1['c6r3_t4'] + p1['c6r4_t4'] + p1['c6r5_t4']+ p1['c6r6_t4']
 
     p1['c6r1_t5'] = float(df_Mn.loc[df_Mn.CLASS == "Indoor domestic"].AGRICULTURE)
     p1['c6r2_t5'] = float(df_Mn.loc[df_Mn.CLASS == "Indoor industry"].AGRICULTURE)
@@ -825,7 +832,8 @@ def create_sheet2_png(basin, period, units, data, output, template=False,
     p1['c7r3_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Residential"].ENVIRONMENT)
     p1['c7r4_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Industry"].ENVIRONMENT)
     p1['c7r5_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Others"].ENVIRONMENT)
-    p1['c7_t4_total'] = p1['c7r1_t4'] + p1['c7r2_t4'] + p1['c7r3_t4'] + p1['c7r4_t4'] + p1['c7r5_t4']
+    p1['c7r6_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Aquaculture"].ENVIRONMENT)
+    p1['c7_t4_total'] = p1['c7r1_t4'] + p1['c7r2_t4'] + p1['c7r3_t4'] + p1['c7r4_t4'] + p1['c7r5_t4'] + p1['c7r6_t4']
 
     p1['c7r1_t5'] = float(df_Mn.loc[df_Mn.CLASS == "Indoor domestic"].ENVIRONMENT)
     p1['c7r2_t5'] = float(df_Mn.loc[df_Mn.CLASS == "Indoor industry"].ENVIRONMENT)
@@ -866,7 +874,8 @@ def create_sheet2_png(basin, period, units, data, output, template=False,
     p1['c8r3_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Residential"].ECONOMY)
     p1['c8r4_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Industry"].ECONOMY)
     p1['c8r5_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Others"].ECONOMY)
-    p1['c8_t4_total'] = p1['c8r1_t4'] + p1['c8r2_t4'] + p1['c8r3_t4'] + p1['c8r4_t4'] + p1['c8r5_t4']
+    p1['c8r6_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Aquaculture"].ECONOMY)
+    p1['c8_t4_total'] = p1['c8r1_t4'] + p1['c8r2_t4'] + p1['c8r3_t4'] + p1['c8r4_t4'] + p1['c8r5_t4'] + p1['c8r6_t4']
 
     p1['c8r1_t5'] = float(df_Mn.loc[df_Mn.CLASS == "Indoor domestic"].ECONOMY)
     p1['c8r2_t5'] = float(df_Mn.loc[df_Mn.CLASS == "Indoor industry"].ECONOMY)
@@ -907,7 +916,8 @@ def create_sheet2_png(basin, period, units, data, output, template=False,
     p1['c9r3_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Residential"].ENERGY)
     p1['c9r4_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Industry"].ENERGY)
     p1['c9r5_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Others"].ENERGY)
-    p1['c9_t4_total'] = p1['c9r1_t4'] + p1['c9r2_t4'] + p1['c9r3_t4'] + p1['c9r4_t4'] + p1['c9r5_t4']
+    p1['c9r6_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Aquaculture"].ENERGY)
+    p1['c9_t4_total'] = p1['c9r1_t4'] + p1['c9r2_t4'] + p1['c9r3_t4'] + p1['c9r4_t4'] + p1['c9r5_t4'] + p1['c9r6_t4']
 
     p1['c9r1_t5'] = float(df_Mn.loc[df_Mn.CLASS == "Indoor domestic"].ENERGY)
     p1['c9r2_t5'] = float(df_Mn.loc[df_Mn.CLASS == "Indoor industry"].ENERGY)
@@ -949,7 +959,8 @@ def create_sheet2_png(basin, period, units, data, output, template=False,
     p1['c10r3_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Residential"].LEISURE)
     p1['c10r4_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Industry"].LEISURE)
     p1['c10r5_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Others"].LEISURE)
-    p1['c10_t4_total'] = p1['c10r1_t4'] + p1['c10r2_t4'] + p1['c10r3_t4'] + p1['c10r4_t4'] + p1['c10r5_t4']
+    p1['c10r6_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Aquaculture"].LEISURE)
+    p1['c10_t4_total'] = p1['c10r1_t4'] + p1['c10r2_t4'] + p1['c10r3_t4'] + p1['c10r4_t4'] + p1['c10r5_t4'] + p1['c10r6_t4']
 
     p1['c10r1_t5'] = float(df_Mn.loc[df_Mn.CLASS == "Indoor domestic"].LEISURE)
     p1['c10r2_t5'] = float(df_Mn.loc[df_Mn.CLASS == "Indoor industry"].LEISURE)
@@ -992,7 +1003,8 @@ def create_sheet2_png(basin, period, units, data, output, template=False,
     p1['c11r3_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Residential"].NON_BENEFICIAL)
     p1['c11r4_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Industry"].NON_BENEFICIAL)
     p1['c11r5_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Others"].NON_BENEFICIAL)
-    p1['c11_t4_total'] = p1['c11r1_t4'] + p1['c11r2_t4'] + p1['c11r3_t4'] + p1['c11r4_t4'] + p1['c11r5_t4']
+    p1['c11r6_t4'] = float(df_Mc.loc[df_Mc.CLASS == "Aquaculture"].NON_BENEFICIAL)
+    p1['c11_t4_total'] = p1['c11r1_t4'] + p1['c11r2_t4'] + p1['c11r3_t4'] + p1['c11r4_t4'] + p1['c11r5_t4'] + p1['c11r6_t4']
 
     p1['c11r1_t5'] = float(df_Mn.loc[df_Mn.CLASS == "Indoor domestic"].NON_BENEFICIAL)
     p1['c11r2_t5'] = float(df_Mn.loc[df_Mn.CLASS == "Indoor industry"].NON_BENEFICIAL)
@@ -1074,18 +1086,21 @@ def create_sheet2_png(basin, period, units, data, output, template=False,
     p1['r3_t4_bene'] = p1['c6r3_t4'] + p1['c7r3_t4'] + p1['c8r3_t4'] + p1['c9r3_t4'] + p1['c10r3_t4']
     p1['r4_t4_bene'] = p1['c6r4_t4'] + p1['c7r4_t4'] + p1['c8r4_t4'] + p1['c9r4_t4'] + p1['c10r4_t4']
     p1['r5_t4_bene'] = p1['c6r5_t4'] + p1['c7r5_t4'] + p1['c8r5_t4'] + p1['c9r5_t4'] + p1['c10r5_t4']
+    p1['r6_t4_bene'] = p1['c6r6_t4'] + p1['c7r6_t4'] + p1['c8r6_t4'] + p1['c9r6_t4'] + p1['c10r6_t4']
 
     p1['c5r1_t4_left'] = p1['c1r1_t4'] + p1['c2r1_t4'] + p1['c3r1_t4'] + p1['c4r1_t4']
     p1['c5r2_t4_left'] = p1['c1r2_t4'] + p1['c2r2_t4'] + p1['c3r2_t4'] + p1['c4r2_t4']
     p1['c5r3_t4_left'] = p1['c1r3_t4'] + p1['c2r3_t4'] + p1['c3r3_t4'] + p1['c4r3_t4']
     p1['c5r4_t4_left'] = p1['c1r4_t4'] + p1['c2r4_t4'] + p1['c3r4_t4'] + p1['c4r4_t4']
     p1['c5r5_t4_left'] = p1['c1r5_t4'] + p1['c2r5_t4'] + p1['c3r5_t4'] + p1['c4r5_t4']
+    p1['c5r6_t4_left'] = p1['c1r6_t4'] + p1['c2r6_t4'] + p1['c3r6_t4'] + p1['c4r6_t4']
 
     p1['c5r1_t4_right'] = p1['r1_t4_bene'] + p1['c11r1_t4']
     p1['c5r2_t4_right'] = p1['r2_t4_bene'] + p1['c11r2_t4']
     p1['c5r3_t4_right'] = p1['r3_t4_bene'] + p1['c11r3_t4']
     p1['c5r4_t4_right'] = p1['r4_t4_bene'] + p1['c11r4_t4']
     p1['c5r5_t4_right'] = p1['r5_t4_bene'] + p1['c11r5_t4']
+    p1['c5r6_t4_right'] = p1['r6_t4_bene'] + p1['c11r6_t4']
 
     # Table 5
     p1['r1_t5_bene'] = p1['c6r1_t5'] + p1['c7r1_t5'] + p1['c8r1_t5'] + p1['c9r1_t5'] + p1['c10r1_t5']
@@ -1407,7 +1422,9 @@ def create_sheet2_png(basin, period, units, data, output, template=False,
             'c5r4_t4_left' : 'malu_et_industry',
             'c1r4_t4' : 'malu_t_industry',
             'c5r5_t4_left' : 'malu_et_others1',
-            'c1r5_t4' : 'malu_t_others1'
+            'c1r5_t4' : 'malu_t_others1',
+            'c5r6_t4_left' : 'malu_et_aquaculture',
+            'c1r6_t4' : 'malu_t_aquaculture'
             }        
     
     for key in list(table_4):
