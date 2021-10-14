@@ -392,7 +392,7 @@ def create_sheet3_png(basin, period, units, data, output, template=False):
         'crop_r01c08' : crop_WC['Cotton'],
         'crop_r01c09' : crop_WC['Summer Other'],
         'crop_r01c10' : crop_WC['Orchards'],
-        'crop_r01c11' : crop_WC['Banana'],
+#        'crop_r01c11' : crop_WC['Banana'],
         'crop_r01' : ag_water_cons,
         'crop_r02c01' : crop_Area['Wheat'],
         'crop_r02c02' : crop_Area['Winter Vegetables'],
@@ -404,7 +404,7 @@ def create_sheet3_png(basin, period, units, data, output, template=False):
         'crop_r02c08' : crop_Area['Cotton'],
         'crop_r02c09' : crop_Area['Summer Other'],
         'crop_r02c10' : crop_Area['Orchards'],
-        'crop_r02c11' : crop_Area['Banana'],
+#        'crop_r02c11' : crop_Area['Banana'],
             } 
     
     for key in p1:
@@ -428,7 +428,7 @@ def create_sheet3_png(basin, period, units, data, output, template=False):
         'lp_r01c08' : crop_LP['Cotton'],
         'lp_r01c09' : crop_LP['Summer Other'],
         'lp_r01c10' : crop_LP['Orchards'],
-        'lp_r01c11' : crop_LP['Banana'],
+#        'lp_r01c11' : crop_LP['Banana'],
         }
     
     for key in p2:
@@ -450,7 +450,7 @@ def create_sheet3_png(basin, period, units, data, output, template=False):
         'wp_r01c08' : crop_WP['Cotton'],
         'wp_r01c09' : crop_WP['Summer Other'],
         'wp_r01c10' : crop_WP['Orchards'],
-        'wp_r01c11' : crop_WP['Banana'],
+#        'wp_r01c11' : crop_WP['Banana'],
             }
     
     for key in p3:

@@ -18,7 +18,7 @@
    width="1355.4375"
    height="1027.5601"
    viewBox="0 0 1355.4375 1027.5601"
-   sodipodi:docname="sheet_3_national.svg"
+   sodipodi:docname="sheet_3_national_old.svg"
    inkscape:export-filename="D:\svg_dev\Sheet3_NatAccounts_v2.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"><sodipodi:namedview
@@ -46,7 +46,7 @@
        id="grid4945" /></sodipodi:namedview><metadata
      id="metadata3342"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
      id="defs3340"><linearGradient
        id="linearGradient4864"
        osb:paint="solid"><stop
@@ -85,32 +85,43 @@
      d="M 0,0 H -950.25 V 294.803 H -0.001 Z" /></g><path
    inkscape:connector-curvature="0"
    id="path3372-2-2-2"
-   style="fill:#d9e086;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.83755589;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-   d="M 834.7247,323.93016 H 772.89641 V 146.88978 h 61.82829 z" /><text
+   style="fill:#d9e086;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.05979407;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+   d="M 871.88897,323.93016 H 772.89641 V 146.88978 h 98.99256 z" /><text
    id="text3496-5-7-4-6-8-3-6-9"
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.20000076px;line-height:0%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#2b2b2a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
    x="167.96558"
-   y="809.2854"
+   y="801.28552"
    transform="matrix(0,1,1,0,0,0)"><tspan
      style="stroke-width:1"
      sodipodi:role="line"
      id="tspan1103-4"
      x="167.96558"
-     y="809.2854">Orchards</tspan></text>
+     y="801.28552">Orchards</tspan></text>
 
 
+<text
+   id="text3496-5-7-6-8-9-9"
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.20000076px;line-height:0%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#2b2b2a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
+   x="167.39371"
+   y="849.36304"
+   transform="matrix(0,1,1,0,0,0)"><tspan
+     style="stroke-width:1"
+     sodipodi:role="line"
+     id="tspan1422-0"
+     x="167.39371"
+     y="849.36304">Banana</tspan></text>
 
 
 <text
    y="-303.32449"
-   x="779.48816"
+   x="795.48792"
    id="text3510-4-7-1-3"
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.06666756px;line-height:0%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#2b2b2a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
    transform="scale(1,-1)"><tspan
      style="stroke-width:1"
      sodipodi:role="line"
      id="tspan1416-0"
-     x="779.48816"
+     x="795.48792"
      y="-303.32449">Fruits</tspan></text>
 
 
@@ -133,7 +144,13 @@
      id="tspan1097-3">Maize</tspan></text>
 
 
-<text
+<g
+   transform="matrix(1,0,0,0.71857759,820.4399,290.41566)"
+   id="g3400-3-5-2"><path
+     inkscape:connector-curvature="0"
+     id="path3402-36-8-5"
+     style="fill:none;stroke:#ffffff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+     d="M 0,0 V -211.529" /></g><text
    id="text3496-5-7-4-6-8-3-5"
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.20000076px;line-height:0%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#2b2b2a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
    x="167.39371"
@@ -389,25 +406,41 @@
      d="M 0,0 -688.802,0.031 V 291.967 L 0.011,291.936 Z" /></g><path
    inkscape:connector-curvature="0"
    id="path3372-2-2"
-   style="fill:#d9e086;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.81048054;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-   d="M 830.7616,637.80843 H 772.87804 V 460.7316 h 57.88356 z" />
+   style="fill:#d9e086;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.05979407;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+   d="M 871.88883,637.7902 H 772.89627 V 460.74983 h 98.99256 z" /><g
+   transform="matrix(1,0,0,0.71857759,820.43975,604.2757)"
+   id="g3400-3-5"><path
+     inkscape:connector-curvature="0"
+     id="path3402-36-8"
+     style="fill:none;stroke:#ffffff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+     d="M 0,0 V -211.529" /></g>
 
 
 <text
    id="text3496-5-7-4-6-8-3-6"
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.20000076px;line-height:0%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#2b2b2a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
    x="483.16559"
-   y="809.28528"
+   y="801.2854"
    transform="matrix(0,1,1,0,0,0)"><tspan
      sodipodi:role="line"
      id="tspan1103"
      x="483.16559"
-     y="809.28528">Orchards</tspan></text>
+     y="801.2854">Orchards</tspan></text>
 
 
 
 
 
+<text
+   id="text3496-5-7-6-8-9"
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.20000076px;line-height:0%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#2b2b2a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
+   x="482.59369"
+   y="847.76294"
+   transform="matrix(0,1,1,0,0,0)"><tspan
+     sodipodi:role="line"
+     id="tspan1422"
+     x="482.59369"
+     y="847.76294">Banana</tspan></text>
 
 
 
@@ -415,13 +448,13 @@
 
 <text
    y="-617.18463"
-   x="777.888"
+   x="795.48773"
    id="text3510-4-7-1"
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.06666756px;line-height:0%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#2b2b2a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
    transform="scale(1,-1)"><tspan
      sodipodi:role="line"
      id="tspan1416"
-     x="777.888"
+     x="795.48773"
      y="-617.18463">Fruits</tspan></text>
 
 
@@ -847,6 +880,17 @@
 
 
 
+<text
+   id="crop_r01c11"
+   style="font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+   x="831.43585"
+   y="-444.96393"
+   transform="scale(1,-1)"><tspan
+     id="tspan3644-0-4-4-1"
+     sodipodi:role="line"
+     y="-444.96393"
+     x="831.43585"
+     style="font-size:14px;line-height:1.25">NaN</tspan></text>
 
 
 
@@ -861,13 +905,13 @@
 <text
    id="crop_r01c10"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-   x="791.0401"
+   x="783.04022"
    y="-444.9639"
    transform="scale(1,-1)"><tspan
      id="tspan3644-0-4-7-98"
      sodipodi:role="line"
      y="-444.9639"
-     x="791.0401"
+     x="783.04022"
      style="font-size:14px;line-height:1.25">NaN</tspan></text>
 
 
@@ -1548,19 +1592,31 @@
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
 
 
+<text
+   id="crop_r02c11"
+   style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
+   x="831.43567"
+   y="-398.01724"
+   transform="scale(1,-1)"
+   inkscape:label="#crop_r01c11-4"><tspan
+     id="tspan3644-0-4-4-1-7"
+     sodipodi:role="line"
+     y="-398.01724"
+     x="831.43567"
+     style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
 
 
 <text
    id="crop_r02c10"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
-   x="791.03992"
+   x="783.04004"
    y="-398.01724"
    transform="scale(1,-1)"
    inkscape:label="#crop_r01c10-0"><tspan
      id="tspan3644-0-4-7-98-16"
      sodipodi:role="line"
      y="-398.01724"
-     x="791.03992"
+     x="783.04004"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
 
 
@@ -1688,18 +1744,29 @@
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
 
 
+<text
+   id="lp_r01c11"
+   style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
+   x="831.43604"
+   y="-127.90379"
+   transform="scale(1,-1)"><tspan
+     id="tspan3644-0-4-4-1-8"
+     sodipodi:role="line"
+     y="-127.90379"
+     x="831.43604"
+     style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
 
 
 <text
    id="lp_r01c10"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
-   x="791.04028"
+   x="783.04041"
    y="-127.90379"
    transform="scale(1,-1)"><tspan
      id="tspan3644-0-4-7-98-8"
      sodipodi:role="line"
      y="-127.90379"
-     x="791.04028"
+     x="783.04041"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
 
 
@@ -1820,18 +1887,29 @@
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
 
 
+<text
+   id="wp_r01c11"
+   style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
+   x="831.43561"
+   y="-75.850418"
+   transform="scale(1,-1)"><tspan
+     id="tspan3644-0-4-4-1-8-6"
+     sodipodi:role="line"
+     y="-75.850418"
+     x="831.43561"
+     style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
 
 
 <text
    id="wp_r01c10"
    style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
-   x="791.03986"
+   x="783.03998"
    y="-75.850418"
    transform="scale(1,-1)"><tspan
      id="tspan3644-0-4-7-98-8-8"
      sodipodi:role="line"
      y="-75.850418"
-     x="791.03986"
+     x="783.03998"
      style="font-size:14px;line-height:1.25;stroke-width:1">NaN</tspan></text>
 
 
